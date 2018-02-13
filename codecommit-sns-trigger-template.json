@@ -1,0 +1,25 @@
+{
+    "repositoryName": "MyDemoRepo",
+    "triggers": [
+        {
+            "name": "MyFirstTrigger",
+            "destinationArn": "arn:aws:sns:us-east-1:80398EXAMPLE:MySNSTopic",
+            "customData": "",
+            "branches": [
+                "master", "preprod"
+            ],
+            "events": [
+                "all"
+            ]
+        },
+        {
+            "name": "MySecondTrigger",
+            "destinationArn": "arn:aws:sns:us-east-1:80398EXAMPLE:MySNSTopic2",
+            "customData": "",
+            "branches": [],
+            "events": [
+                "updateReference", "deleteReference"
+            ]
+        }
+    ]
+}
